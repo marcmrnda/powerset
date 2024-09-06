@@ -41,7 +41,10 @@ calcuBTN.addEventListener('click', function(){
     for(let i = 0; i<splittedValues.length; i++) {
         firstArr.push(splittedValues[i])
        }
+
+    let result = powerSet(firstArr)
+    let realResult = result.join(', ')
  
-    answerEl.textContent =  powerSet(firstArr);
+    answerEl.textContent =  realResult;
 })
 
